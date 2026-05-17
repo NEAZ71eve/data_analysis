@@ -1,0 +1,36 @@
+# Large data files
+*.csv
+*.db
+*.sqlite
+*.sqlite3
+
+# Hadoop and temporary files
+/tmp/
+*.log
+*.txt
+*.swp
+*.swo
+*~
+
+# Generated images (keep them in repo)
+!*.png
+!*.jpg
+!*.jpeg
+
+# Docker
+.DS_Store
+docker-compose.override.yml
+
+# IDE
+.vscode/
+.idea/
+*.iml
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# OS files
+Thumbs.db
