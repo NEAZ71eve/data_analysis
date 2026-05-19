@@ -25,6 +25,16 @@
 
 ## 快速开始
 
+### 方案一：Docker Compose + Hive（推荐）
+
+```bash
+# 启动容器
+docker-compose up -d
+
+# 等待启动后执行分析
+bash run_project.sh
+```
+
 ### 方案二：Python + SQLite（快速上手）
 
 ```bash
@@ -33,16 +43,6 @@ pip install pandas
 
 # 运行分析
 python taobao_analysis.py
-```
-
-### 方案三：Hadoop MapReduce
-
-```bash
-# 配置环境（WSL 2）
-source setup_hadoop_env.sh
-
-# 运行分析
-bash run_hadoop_analysis.sh
 ```
 
 ## 项目文件
@@ -130,9 +130,9 @@ https://tianchi.aliyun.com/dataset/649
 
 ## 数据可视化
 
-本项目提供两种可视化方案：
+本项目提供两种可视化方法：
 
-### 方案一：Python + Matplotlib
+### 方法一：Python + Matplotlib
 
 ```bash
 # 安装依赖
@@ -146,7 +146,7 @@ python visualize.py
 - 每日PV/UV趋势图
 - PV和UV对比图
 
-### 方案二：Power BI
+### 方法二：Power BI
 
 1. 打开 Power BI Desktop
 2. 导入 `result.csv` 文件
